@@ -13,10 +13,11 @@ const ProductList = ({id,title,description,price,category,image,discountPercenta
             <h2 className="text-sm lg:text-base mt-2">
               <Link className="text-base font-bold" href={`/products/${id}`}>
                 {title}
-              </Link>
-              <span className="text-[#919090]">
+                <span className="text-[#919090]">
                 <Link href={`/category/${category}`}>({category})</Link>
               </span>
+              </Link>
+              
             </h2>
             <p className="text-[#919090] text-sm ">
               {description}
